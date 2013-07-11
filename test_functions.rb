@@ -2,8 +2,8 @@
 require 'minitest/spec'
 require 'minitest/autorun'
 
-# load in double.rb
-require_relative 'double'
+# load in functions.rb
+require_relative 'functions'
 
 # do the test
 describe 'double' do
