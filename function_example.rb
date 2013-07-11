@@ -12,6 +12,6 @@ guest_name = gets
 # Remove the 'newline' caused by pressing enter
 guest_name = guest_name.chomp
 # Capitalize the string
-guest_name = guest.capitalize
+guest_name = guest_name.capitalize
 
 puts "Welcome #{main_name} and #{guest_name}!"
