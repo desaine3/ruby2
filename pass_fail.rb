@@ -7,21 +7,25 @@
 def pass_fail(mark)
 	outcome = 'fail'
 
-	# TODO write your conditional here. The pass mark is 50
+	# TODO write your if statement here. It should change outcome to 'pass' 
+    # if the mark is at least the pass mark. The pass mark is 50.
 
 	return outcome
 end
 
 
 
-# This function should do the same as the function above but
-# with a variable pass mark
+# The rules in this exam are more complicated (and the pass_mark isn't necessarily 50).
+# There are two ways a student can pass:
+#     1. If their first mark (mark1) at least the pass mark
+#     2. If their first mark is at least half the pass mark and their second
+#          mark (mark2) at least the pass mark
 #
-#  pass_fail2(40, 60) #=> 'fail'
-#  pass_fail2(40, 39) #=> 'pass'
+#   e.g pass_fail2(50,  3, 50) #=> 'pass' (1st mark is the pass mark)
+#       pass_fail2(10, 99, 50) #=> 'fail' (1st mark isn't half the pass mark)
+#       pass_fail2(25, 50, 50) #=> 'pass' (condition 2. holds)
+#
+def pass_fail2(mark1, mark2, pass_mark)
+	# TODO write the function here, using if .. else .. statements
 
-def pass_fail2(mark, pass_mark)
-	# TODO write the function here
-
-	return outcome
 end
