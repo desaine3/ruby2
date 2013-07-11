@@ -23,13 +23,13 @@ end
 
 describe 'f' do
 	it "works on decimals" do
-		assert_equal 0.4, f(0.0)
-		assert_equal 1.6, f(2.0)
-		assert_equal 1.2, f(-1.0)
+		assert_equal 0.4, f(0.0), "f(0.0) should be 0.4"
+		assert_equal 1.6, f(2.0), "f(2.0) should be 1.6"
+		assert_equal -0.8, f(-1.0), "f(-1.0) should be -0.8"
 	end
 	it "works on integers" do
-		assert_equal 0.4, f(0)
-		assert_equal 1.6, f(2)
+		assert_equal 0.4, f(0), "f(0) should be 0.4. Be careful of integer division!"
+		assert_equal 1.6, f(2), "f(2) should be 1.6. Be careful of integer division!"
 	end
 end
 
