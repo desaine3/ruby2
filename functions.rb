@@ -8,7 +8,7 @@
 #   double(6) #=> 12
 #
 def double(n)
-	return n
+	return 2*n
 end
 
 
@@ -17,14 +17,15 @@ end
 #   hello("dave") #=> "Hello dave"
 #
 def hello(name)
-	return 'Hello #{name}'
-edn
+	return "Hello #{name}"
+end
 
 
 
 # Evaluates the function f(x) = (2 + 5x - x**2)/5
-def f(x):
+def f(x)
 	# TODO change the return value to fix the function
+	x = (2 +5*x - x**2)/5.0
 	return x
 end
 
@@ -33,8 +34,8 @@ end
 #
 # 	insult('goose', 5) # => "Goose off!!!!!"
 #
-define insult(word, strength)
-	return "#{word} off" + '!' * strength
+def insult(word, strength)
+	return "#{word.capitalize} off" + '!' * strength
 end
 
 
@@ -45,7 +46,7 @@ end
 #   i_love('coding') #=> "I love coding!"
 #   i_love  #=> "I love ruby!"
 #
-def i_love(thing = "python")
+def i_love(thing = 'ruby')
 	return "I love #{thing}!"
 end
 
