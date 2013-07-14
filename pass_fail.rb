@@ -6,6 +6,9 @@
 #
 def pass_fail(mark)
 	outcome = 'fail'
+    if mark >=50
+        outcome = 'pass'
+    end
 
 	# TODO write your if statement here. It should change outcome to 'pass' 
     # if the mark is at least the pass mark. The pass mark is 50.
@@ -27,5 +30,14 @@ end
 #
 def pass_fail2(mark1, mark2, pass_mark)
 	# TODO write the function here, using if .. else .. statements
+    outcome = 'fail'
+    if mark1 >=50
+        outcome = 'pass'
+    end
 
+    if mark1 >=25 && mark2>=50
+       outcome = 'pass'
+    end
+
+return outcome
 end
